@@ -30,11 +30,15 @@ function imprimirFicha(nombre, apellido, dni, direccion){
 //	var enviar = document.getElementById("enviar");
 	var record = document.getElementById("records");
 
-
+	if(dni.value.length == 8){
 	records.innerHTML = "<li> Nombre: " + nombre.value + "<br>" +
            "<li> Apellido: " + apellido.value + "<br>" +
            "<li> DNI: " + dni.value + "<br>" +
            "<li> Dirección: " + direccion.value + "<br>"
+	}else{
+		return alert("Ingrese un número de ocho dígitos")
+	}
+
 };
 
 /* enviar.onclick = function(){

@@ -11,18 +11,18 @@
 
 	<form action="">
 		Nombre: <br>
-		<input type="text" name="nombre" id="nombre"><br>
+		<input type="text" name="nombre" id="nombre" required=""> <br>
 		Apellido: <br>
-		<input type="text" name="apellido" id="apellido"><br>
+		<input type="text" name="apellido" id="apellido" required=""> <br>
 		DNI: <br>
 		<input type="text" name="dni" id="dni"><br>
 		Dirección: <br>
-		<input type="text" name="direccion" id="direccion"><br>
+		<input type="text" name="direccion" id="direccion" required=""> <br>
 		<br>
 		<!-- <input type="submit" name="enviar" id="enviar" value="Enviar" style="width: 22%"> -->
 	</form>
 	
-	<button id="enviar" type="button" name="button" onclick="imprimirFicha()">Enviar</button>
+	<button id="enviar" type="submit" name="button" onclick="imprimirFicha()">Enviar</button>
 
 	<div id="records" style="margin-top: 25px"></div>
 </body>
